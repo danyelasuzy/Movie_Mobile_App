@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import MovieCard from "@/components/MovieCard";
 import { fetchMovies } from "@/services/api";
 import { updateSearchCount } from "@/services/appwrite";
@@ -35,6 +36,9 @@ const Search = () => {
 
   return () => clearTimeout(timeoutId);
 }, [ searchQuery]);
+
+
+
 
   return (
     <View className="flex-1 bg-primary">

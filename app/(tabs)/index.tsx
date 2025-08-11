@@ -23,7 +23,7 @@ export default function Index() {
     loading: trendingLoading,
     error: trendingError,
   } = useFetch(() => getTrendingMovies());
-  }
+  
 
   const {
     data: moviesResponse,
@@ -89,4 +89,6 @@ export default function Index() {
       </ScrollView>
     </View>
   );
+
+
 }
