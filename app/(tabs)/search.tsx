@@ -3,14 +3,14 @@ import MovieCard from "@/components/MovieCard";
 import { fetchMovies } from "@/services/api";
 import { updateSearchCount } from "@/services/appwrite";
 import useFetch from "@/services/useFetch";
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 import { ActivityIndicator, FlatList, Image, Text, View } from "react-native";
 import SearchBar from "../../components/SearchBar";
 import { icons } from "../../constants/icons";
 import { images } from "../../constants/images";
 
 const Search = () => {
-  const [searchQuery, setSearchQuery] = React.useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
 
   const {
